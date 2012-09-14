@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/conversation_reply_idNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/conversation_reply_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/conversation_reply_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:text="Poster"
+        android:textColor="@color/DarkPsychicBlue" />
+
+    <TextView
+        android:id="@+id/conversation_reply_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conversation_reply_poster"
+        android:layout_marginLeft="26dp"
+        android:text="Reply" />
+
+</RelativeLayout>

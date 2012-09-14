@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.datapath.telepath"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EnterNameActivity"
+            		android:label="Enter new Name"
+            		android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".SelectRegionActivity"
+            		android:label="Available Regions"
+            		android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".DebugActivity"/>
+        <activity android:name=".OverviewActivity"
+            		android:label="Region Overview"/>
+        <activity android:name=".ConversationActivity"
+            		android:label="PsyBorg"/>
+         <activity android:name=".ConversationAddParentActivity"
+            		android:label="Start Conversation"
+            		android:theme="@android:style/Theme.Dialog"/>
+         <activity android:name=".ConversationAddReplyActivity"
+            		android:label="Reply"
+            		android:theme="@android:style/Theme.Dialog"/>
+         <activity android:name=".ConversationSettingsActivity"
+            		android:label="FilterSettings"
+            		android:theme="@android:style/Theme.Dialog"/>
+         <activity android:name=".AlertActivity"
+             		android:label="Alert"
+            		android:theme="@android:style/Theme.Dialog"/>
+         <activity android:name=".SignUpActivity"
+            		android:label="Sign Up"/>
+         <activity android:name=".SendPMActivity"
+     				android:theme="@android:style/Theme.Dialog"
+            		android:label="Send Personal Message"/>
+         <activity android:name=".ViewInboxActivity"
+            		android:label="Inbox"/>
+         <activity android:name=".PmConversationActivity"
+             		android:label = "Conversation"/>
+    </application>
+
+</manifest>

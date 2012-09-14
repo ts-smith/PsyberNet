@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/pm_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Message"
+        android:gravity="top|left" />
+
+    <Button
+        android:id="@+id/pm_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Send!"
+        android:onClick="pmSend" />
+
+</LinearLayout>

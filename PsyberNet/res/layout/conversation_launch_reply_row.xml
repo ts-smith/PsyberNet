@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey">
+    
+    <TextView
+        android:id="@+id/conversation_launch_reply_idNum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone">
+    </TextView>
+
+
+
+
+
+    <Button
+        android:id="@+id/lock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        style="?android:attr/buttonStyleSmall"
+        android:contentDescription="@string/lockDesc"
+        android:drawableLeft="@drawable/lock_off_icon"
+        android:text="Lock"
+        android:drawablePadding="7dp" />
+
+    <Button
+        android:id="@+id/conversation_launch_reply_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Reply" />
+
+</RelativeLayout>

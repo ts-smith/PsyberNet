@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/overviewConversationContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:text="Content" />
+
+    <TextView
+        android:id="@+id/overviewConversationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/overviewConversationPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Poster" />
+
+    <TextView
+        android:id="@+id/overviewConversationTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/overviewConversationDate"
+        android:text="Topic" />
+
+</RelativeLayout>

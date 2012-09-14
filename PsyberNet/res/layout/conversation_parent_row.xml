@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue">
+
+    <TextView
+        android:id="@+id/conversation_parent_idNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/conversation_parent_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Parent"
+        android:textColor="@color/DarkPsychicBlue" />
+
+    <TextView
+        android:id="@+id/conversation_parent_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/conversation_parent_poster"
+        android:layout_marginLeft="24dp"
+        android:text="Content"
+        android:textColor="@color/TextBlack" />
+
+    <TextView
+        android:id="@+id/conversation_parent_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/conversation_parent_content"
+        android:layout_alignParentRight="true"
+        android:text="Date"
+        android:textColor="@color/TextBlack" />
+
+    <TextView
+        android:id="@+id/conversation_parent_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/conversation_parent_content"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/conversation_parent_date"
+        android:text="Topic"
+        android:textColor="@color/TextBlack" />
+
+</RelativeLayout>

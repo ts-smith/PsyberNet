@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">Telepath</string>
+    <string name="userName">Anon</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Telepath</string>
+    <string name="userNameButton">Change Name</string>
+    <string name="nameLabel">User Name: </string>
+    <string name="findRegions">Find Nearby Regions</string>
+    <string name="conversationOverview">Conversations Overview</string>
+    <string name="bulletinOverview">Bulletins Overview</string>
+    <string name="conversationAddParentButton">+</string>
+    <string name="conversationSettingsButton">Filter</string>
+    <string name="lockDesc">Locks view on specified conversation</string>
+    <string name="menu_inbox">Inbox</string>
+    <string name="menu_sound">Sound Settings</string>
+
+</resources>

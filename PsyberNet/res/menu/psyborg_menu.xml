@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/view_inbox"
+        android:title="@string/menu_inbox"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/view_sound_settings"
+        android:title="@string/menu_sound"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

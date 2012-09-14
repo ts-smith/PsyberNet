@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/conversationAddParentTopic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:ems="10"
+            android:hint="Topic" >
+
+            <requestFocus />
+        </EditText>
+        
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="!" >
+        </Button>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/conversationAddParentContent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Message"
+        android:gravity="top|left" />
+
+    <Button
+        android:id="@+id/conversationAddParentSend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Send!"
+        android:onClick="conversationsAddParentSend" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/conversationListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="73" 
+        ></ListView>
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <Button
+        android:id="@+id/conversationAddParent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/conversationAddParentButton"
+        android:onClick="conversationAddParentButton" />
+        <Button
+        android:id="@+id/conversationSettings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="@string/conversationSettingsButton"
+        android:onClick="conversationSettings" />
+
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue" >
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/nameLabel" />
+
+    <TextView
+        android:id="@id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameLabel"
+        android:layout_alignBottom="@+id/nameLabel"
+        android:layout_toRightOf="@+id/nameLabel"
+        android:text="@string/userName"
+        tools:context=".MainActivity" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:onClick="findRegions"
+        android:text="@string/findRegions" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:onClick="findRegionsInside"
+        android:text="Find Regions(fast, inaccurate)" />
+
+    <Button
+        android:id="@+id/account_sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameLabel"
+        android:layout_below="@+id/nameLabel"
+        android:onClick="launchSignUpActivity"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/account_sign_in_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/account_sign_up_button"
+        android:layout_below="@+id/account_sign_up_button"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Account Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/account_sign_in_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/account_sign_in_field"
+        android:layout_below="@+id/account_sign_in_field"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/account_sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameLabel"
+        android:layout_alignLeft="@+id/nameLabel"
+        android:text="Sign Out"
+        android:onClick="signOut" />
+
+    <Button
+        android:id="@+id/account_sign_in_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/account_sign_in_field"
+        android:layout_toRightOf="@+id/account_sign_in_password"
+        android:onClick="signIn"
+        android:text="Sign In" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignTop="@id/userName"
+        android:visibility="gone"  />
+
+</RelativeLayout>
